@@ -1,0 +1,13 @@
+* {
+	box-sizing: border-box;
+	padding: 0;
+	margin: 0;
+}
+
+:root {
+	--main-backgroundColor: #283048;
+	--second-backgroundColor: #859398;
+	--main-fontColor: #fff;
+	--second-fontColor: #c7ceea;
+	--third-fontColor: #edeade;
+}
