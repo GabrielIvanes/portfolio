@@ -26,10 +26,15 @@
 
 .home .presentation div {
 	line-height: 1.5;
+	text-align: justify;
 }
 
 .home .presentation div strong {
 	color: var(--accent-color);
+}
+
+.home .tagline {
+	margin-bottom: 20px;
 }
 
 .home button {
@@ -72,10 +77,6 @@
 
 	.home .presentation div {
 		line-height: 2;
-	}
-
-	.home .tagline {
-		margin-bottom: 20px;
 	}
 }
 
