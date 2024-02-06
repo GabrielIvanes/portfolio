@@ -3,11 +3,11 @@ import astronaut from '../assets/images/astronaut.png';
 
 function Home() {
 	const [isImageDisplay, setIsImageDisplay] = useState<boolean>(
-		window.innerWidth > 1050
+		window.innerWidth > 1100
 	);
 
 	function handleResize() {
-		setIsImageDisplay(window.innerWidth > 1050);
+		setIsImageDisplay(window.innerWidth > 1100);
 	}
 
 	window.addEventListener('resize', handleResize);

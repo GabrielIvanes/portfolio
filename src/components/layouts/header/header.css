@@ -39,7 +39,7 @@ header .active {
 	transition: var(--transition);
 }
 
-@media screen and (max-width: 1050px) {
+@media screen and (max-width: 1100px) {
 	header {
 		height: fit-content;
 		flex-direction: column;

@@ -13,10 +13,10 @@ interface Location {
 function Header() {
 	const location = useLocation();
 	const [isNavBarOpen, setIsNavBarOpen] = useState<boolean>(
-		window.innerWidth > 1050
+		window.innerWidth > 1100
 	);
 	const [isResponsive, setIsResponsive] = useState<boolean>(
-		window.innerWidth < 1050
+		window.innerWidth < 1100
 	);
 
 	const locations: Location[] = [
@@ -28,8 +28,8 @@ function Header() {
 	];
 
 	function handleResize() {
-		setIsResponsive(window.innerWidth < 1050);
-		setIsNavBarOpen(window.innerWidth > 1050);
+		setIsResponsive(window.innerWidth < 1100);
+		setIsNavBarOpen(window.innerWidth > 1100);
 	}
 
 	function handleBarsAndXMarkClick() {
@@ -57,8 +57,16 @@ function Header() {
 					))}
 
 					<div className='resume'>
-						<button>CV Dev</button>
-						<button>CV Cybersécurité</button>
+						<button>
+							<a href='/Gabriel_Ivanes_CV_Software.pdf' target='blank'>
+								CV Developpement
+							</a>
+						</button>
+						<button>
+							<a href='/Gabriel_Ivanes_CV_Cybersecurite.pdf' target='blank'>
+								CV Cybersécurité
+							</a>
+						</button>
 					</div>
 				</>
 			) : (
