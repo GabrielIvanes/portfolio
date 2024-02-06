@@ -19,17 +19,13 @@ header .resume {
 	gap: 10px;
 }
 
-/* header .resume button:last-child {
-	margin-left: 10px;
-} */
-
 header .bars,
 header .xMark {
 	position: absolute;
 	font-size: 25px;
 	cursor: pointer;
-	right: 100px;
-	top: 48px;
+	right: 50px;
+	top: 36px;
 }
 
 header a {
