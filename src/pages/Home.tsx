@@ -7,7 +7,7 @@ function Home() {
 				<div>
 					<p>Bonjour et bienvenue, je m'appelle</p>
 					<h1>Gabriel Ivanes.</h1>
-					<h2>Je suis un étudiant ingénieur aux Mines de Douai.</h2>
+					<h2>Je suis un étudiant ingénieur à l'IMT Nord Europe.</h2>
 				</div>
 				<div>
 					Intrigué, fasciné, passionné par la cybersécurité et le développement

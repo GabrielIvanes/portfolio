@@ -1,5 +1,9 @@
 import { Link, useLocation } from 'react-router-dom';
+import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
+import { faBars, faXmark } from '@fortawesome/free-solid-svg-icons';
+
 import './header.css';
+import { useState } from 'react';
 
 interface Location {
 	url: string;
@@ -8,7 +12,12 @@ interface Location {
 
 function Header() {
 	const location = useLocation();
-	console.log(location);
+	const [isNavBarOpen, setIsNavBarOpen] = useState<boolean>(
+		window.innerWidth > 1050
+	);
+	const [isResponsive, setIsResponsive] = useState<boolean>(
+		window.innerWidth < 1050
+	);
 
 	const locations: Location[] = [
 		{ url: '/', name: 'Accueil' },
@@ -18,18 +27,45 @@ function Header() {
 		{ url: '/contact', name: 'Contact' },
 	];
 
+	function handleResize() {
+		setIsResponsive(window.innerWidth < 1050);
+		setIsNavBarOpen(window.innerWidth > 1050);
+	}
+
+	function handleBarsAndXMarkClick() {
+		setIsNavBarOpen(!isNavBarOpen);
+	}
+
+	window.addEventListener('resize', handleResize);
+
 	return (
 		<header>
-			{locations.map((loc, index) => (
-				<Link key={index} to={loc.url}>
-					<div className={location.pathname === loc.url ? 'active' : ''}>
-						{loc.name}
+			{isNavBarOpen ? (
+				<>
+					{isResponsive && (
+						<div className='xMark' onClick={handleBarsAndXMarkClick}>
+							<FontAwesomeIcon icon={faXmark} />
+						</div>
+					)}
+
+					{locations.map((loc, index) => (
+						<Link key={index} to={loc.url}>
+							<div className={location.pathname === loc.url ? 'active' : ''}>
+								{loc.name}
+							</div>
+						</Link>
+					))}
+
+					<div className='resume'>
+						<button>CV Dev</button>
+						<button>CV Cybersécurité</button>
 					</div>
-				</Link>
-			))}
-			<div>
-				<button>CV</button>
-			</div>
+				</>
+			) : (
+				<div className='bars' onClick={handleBarsAndXMarkClick}>
+					<FontAwesomeIcon icon={faBars} />
+				</div>
+			)}
 		</header>
 	);
 }
