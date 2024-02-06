@@ -1,6 +1,17 @@
+import { useState } from 'react';
 import astronaut from '../assets/images/astronaut.png';
 
 function Home() {
+	const [isImageDisplay, setIsImageDisplay] = useState<boolean>(
+		window.innerWidth > 1050
+	);
+
+	function handleResize() {
+		setIsImageDisplay(window.innerWidth > 1050);
+	}
+
+	window.addEventListener('resize', handleResize);
+
 	return (
 		<div className='home'>
 			<div className='presentation'>
@@ -9,12 +20,12 @@ function Home() {
 					<h1>Gabriel Ivanes.</h1>
 					<h2>Je suis un étudiant ingénieur à l'IMT Nord Europe.</h2>
 				</div>
-				<div>
+				<div className='tagline'>
 					Intrigué, fasciné, passionné par la cybersécurité et le développement
 					logiciel, j'aborde chaque défi avec enthousiasme, persévérance et
 					rigueur.
 				</div>
-				<div>
+				<div className='short-presentation'>
 					Je suis actuellement à la recherche d'une opportunité de{' '}
 					<strong>stage</strong> en <strong>France</strong> dans les domaines de
 					la <strong>cybersécurité</strong>, des{' '}
@@ -26,7 +37,7 @@ function Home() {
 			</div>
 			<button>Contactez-moi !</button>
 
-			<img src={astronaut} alt='astronaut' />
+			{isImageDisplay && <img src={astronaut} alt='astronaut' />}
 		</div>
 	);
 }

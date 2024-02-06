@@ -43,7 +43,44 @@
 	position: absolute;
 	width: 250px;
 	bottom: 50px;
-	right: 200px;
+	right: 150px;
 	transform: rotate(30deg);
 	filter: drop-shadow(0 0 2px #ffffff) drop-shadow(0 0 10px #ffffff);
+}
+
+@media screen and (max-width: 1050px) {
+	.home {
+		margin-bottom: 20px;
+	}
+
+	.home .presentation {
+		width: 100%;
+	}
+
+	.home button {
+		margin-top: 20px;
+		background-color: var(--accent-color-opacity);
+		transition: var(--transition);
+		font-size: 18px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.home {
+		padding: 125px 75px 0 75px;
+	}
+
+	.home .presentation div {
+		line-height: 2;
+	}
+
+	.home .tagline {
+		margin-bottom: 20px;
+	}
+}
+
+@media screen and (max-width: 600px) {
+	.home {
+		padding: 125px 25px 0 25px;
+	}
 }
