@@ -1,33 +1,23 @@
 header {
 	display: flex;
-	justify-content: space-between;
+	justify-content: flex-end;
 	align-items: center;
-	padding: 50px 100px;
-	height: 75px;
-}
-
-header .right {
-	display: flex;
-	align-items: center;
-	gap: 10px;
-}
-
-header .right button {
-	cursor: pointer;
-	padding: 5px 10px;
-	border: 1px solid #000;
-	border-radius: 5px;
-	color: #000;
-	background-color: transparent;
-	transition: background-color ease-in 0.4s;
-}
-
-header .right button:hover {
-	background-color: rgba(0, 0, 0, 0.2);
-	transition: background-color ease-in 0.4s;
+	gap: 50px;
+	padding: 0 100px;
+	height: 125px;
+	width: 100%;
+	position: fixed;
+	backdrop-filter: blur(20px);
+	z-index: 1;
 }
 
 header a {
 	color: inherit;
 	text-decoration: none;
+}
+
+header a:hover,
+header .active {
+	color: var(--accent-color);
+	transition: var(--transition);
 }

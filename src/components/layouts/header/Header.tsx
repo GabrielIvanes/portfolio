@@ -1,30 +1,34 @@
-import { Link } from 'react-router-dom';
+import { Link, useLocation } from 'react-router-dom';
 import './header.css';
 
+interface Location {
+	url: string;
+	name: string;
+}
+
 function Header() {
+	const location = useLocation();
+	console.log(location);
+
+	const locations: Location[] = [
+		{ url: '/', name: 'Accueil' },
+		{ url: '/a-propos', name: 'A propos' },
+		{ url: '/experiences', name: 'Expériences' },
+		{ url: '/projets', name: 'Projets' },
+		{ url: '/contact', name: 'Contact' },
+	];
+
 	return (
 		<header>
-			<div className='left'>
-				<Link to='/'>
-					<h1>Gabriel Ivanes</h1>
+			{locations.map((loc, index) => (
+				<Link key={index} to={loc.url}>
+					<div className={location.pathname === loc.url ? 'active' : ''}>
+						{loc.name}
+					</div>
 				</Link>
-			</div>
-			<div className='right'>
-				<Link to='/'>
-					<div>Accueil</div>
-				</Link>
-				<Link to='/experiences'>
-					<div>Expériences</div>
-				</Link>
-				<Link to='/projets'>
-					<div>Projets</div>
-				</Link>
-				<Link to='/contact'>
-					<div>Contact</div>
-				</Link>
-				<div>
-					<button>CV</button>
-				</div>
+			))}
+			<div>
+				<button>CV</button>
 			</div>
 		</header>
 	);

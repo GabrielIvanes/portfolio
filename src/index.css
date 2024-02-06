@@ -1,3 +1,10 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Orbitron&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Nova+Mono&display=swap');
+
+@import './assets/styles/home.css';
+
 * {
 	box-sizing: border-box;
 	padding: 0;
@@ -5,9 +12,63 @@
 }
 
 :root {
-	--main-backgroundColor: #283048;
-	--second-backgroundColor: #859398;
-	--main-fontColor: #fff;
-	--second-fontColor: #c7ceea;
-	--third-fontColor: #edeade;
+	--primary-color: #1c1f2b;
+	--secondary-color: #2e3246;
+	--accent-color: #6b79b7;
+
+	--accent-color-opacity: rgb(107, 121, 183, 0.2);
+
+	--text-color: #ffffff;
+	--text-light: #b0b7d6;
+
+	--border-color: #3e445d;
+
+	--primary-font: monospace;
+	--secondary-font: 'Space Mono';
+	--accent-font: 'Exo 2';
+
+	--transition: all 0.25s ease-in-out;
+}
+
+body {
+	margin: 0;
+	width: 100%;
+	min-height: 100%;
+	background-color: var(--primary-color);
+	color: var(--text-color);
+	font-family: var(--primary-font), var(--secondary-font), Arial, Helvetica,
+		sans-serif;
+}
+
+html {
+	scrollbar-width: thin;
+	scrollbar-color: var(--secondary-color) var(--primary-color);
+}
+
+::-webkit-scrollbar {
+	width: 12px;
+}
+::-webkit-scrollbar-track {
+	background: var(--title-secondary-color);
+}
+::-webkit-scrollbar-thumb {
+	background-color: var(--title-secondary-color);
+	border: 3px solid var(--title-primary-color);
+	border-radius: 10px;
+}
+
+button {
+	padding: 5px 10px;
+	border: 2px solid var(--accent-color);
+	color: var(--accent-color);
+	font-weight: bold;
+	background-color: transparent;
+	border-radius: 5px;
+	cursor: pointer;
+	transition: var(--transition);
+}
+
+button:hover {
+	background-color: var(--accent-color-opacity);
+	transition: var(--transition);
 }

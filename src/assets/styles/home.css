@@ -1,0 +1,49 @@
+.home {
+	position: relative;
+	min-height: calc(100vh - 50px);
+	width: 100%;
+	padding: 125px 100px 0 100px;
+}
+
+.home .presentation {
+	width: 60%;
+	filter: drop-shadow(0 0 150px #ffffff);
+}
+
+.home .presentation p {
+	color: var(--accent-color);
+}
+
+.home .presentation h1 {
+	line-height: 2;
+}
+
+.home .presentation h2 {
+	color: var(--text-light);
+	margin-bottom: 20px;
+	font-family: var(--secondary-font);
+}
+
+.home .presentation div {
+	line-height: 1.5;
+}
+
+.home .presentation div strong {
+	color: var(--accent-color);
+}
+
+.home button {
+	margin-top: 50px;
+	background-color: var(--accent-color-opacity);
+	transition: var(--transition);
+	font-size: 18px;
+}
+
+.home img {
+	position: absolute;
+	width: 250px;
+	bottom: 50px;
+	right: 200px;
+	transform: rotate(30deg);
+	filter: drop-shadow(0 0 2px #ffffff) drop-shadow(0 0 10px #ffffff);
+}
