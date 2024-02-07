@@ -18,7 +18,7 @@ function Projects() {
 			name: 'Flixhunt',
 			date: '2023-2024',
 			description:
-				"Flixhunt est un projet full stack que j'ai commencé en 2023. Cette plateforme offre une gamme d'informations sur les films, les séries télévisées ainsi que sur chaque personne ayant joué un rôle dans leurs réalisations, tout en permettant la création de listes personnalisées. Passionné de cinéma, j'ai développé cette application en utilisant l'API de TMDB, offrant ainsi un espace où tout le monde peut cataloguer ses films et séries préférés, tout en gardant une trace des émotions qu'ils suscitent lors de leur visionnage.",
+				"Flixhunt est un projet full stack que j'ai commencé en 2023. Cette applications offre des informations sur les films, les séries télévisées ainsi que sur chaque personne ayant joué un rôle dans leurs réalisations, tout en permettant la création de listes personnalisées. Passionné de cinéma, j'ai développé cette application en utilisant l'API de TMDB, offrant ainsi un espace où tout le monde peut cataloguer ses films et séries préférés, tout en gardant une trace des émotions qu'ils suscitent lors de leur visionnage.",
 			stack: [
 				'React',
 				'SASS',
