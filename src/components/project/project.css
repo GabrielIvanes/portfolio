@@ -65,16 +65,26 @@
 }
 
 .project img {
-	min-height: 152px;
-	height: 30%;
-	max-height: 300px;
-	width: 69%;
-	min-width: 350px;
-	max-width: 690px;
+	width: 700px;
+	height: 330px;
 }
 
 @media screen and (max-width: 1100px) {
 	.project .information {
 		width: 100%;
+	}
+}
+
+@media screen and (max-width: 900px) {
+	.project img {
+		width: 500px;
+		height: 235.7px;
+	}
+}
+
+@media screen and (max-width: 700px) {
+	.project img {
+		width: 300px;
+		height: 141.4px;
 	}
 }

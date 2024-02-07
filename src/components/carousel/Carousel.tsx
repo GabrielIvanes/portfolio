@@ -50,7 +50,7 @@ function Carousel({ images_path, height }: Props) {
 			}
 		}
 
-		isMaxReached();
+		if (maxScrollPosition) isMaxReached();
 
 		window.addEventListener('resize', () => {
 			setScrollPosition(0);
@@ -74,7 +74,7 @@ function Carousel({ images_path, height }: Props) {
 				<button
 					onClick={prev}
 					className='btn-carousel btn-prev'
-					style={{ top: `${height * 1.4}%` }}
+					style={{ top: `${height * 1.5}%` }}
 				>
 					&#60;
 				</button>
@@ -83,7 +83,7 @@ function Carousel({ images_path, height }: Props) {
 				<button
 					onClick={next}
 					className='btn-carousel btn-next'
-					style={{ top: `${height * 1.4}%` }}
+					style={{ top: `${height * 1.5}%` }}
 				>
 					&#62;
 				</button>
