@@ -1,0 +1,70 @@
+.contact {
+	width: 100%;
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+}
+
+.contact h1 {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 50px;
+	color: var(--text-light);
+}
+
+.contact .content {
+	width: 50%;
+}
+
+.contact .content p {
+	width: fit-content;
+	text-align: justify;
+}
+
+.contact .content .social-media {
+	margin-top: 100px;
+	display: flex;
+	justify-content: center;
+	gap: 20px;
+}
+
+.contact .content .social-media a {
+	color: inherit;
+	text-decoration: none;
+}
+
+.contact .content .social-media a .icon {
+	width: 50px;
+	height: 50px;
+}
+
+@media screen and (max-width: 1100px) {
+	.contact {
+		padding: 125px 10px 0 10px !important;
+	}
+	.contact .content {
+		width: 80%;
+	}
+}
+
+@media screen and (min-width: 1100px) {
+	.contact .content .social-media a .icon {
+		transition: var(--transition);
+	}
+	.contact .content .social-media a:hover .icon {
+		transform: translateY(-5px);
+		transition: var(--transition);
+	}
+
+	.contact .content .social-media a:hover .icon-mail {
+		color: #d44638;
+	}
+
+	.contact .content .social-media a:hover .icon-github {
+		color: #000;
+	}
+
+	.contact .content .social-media a:hover .icon-linkedin {
+		color: #0072b1;
+	}
+}

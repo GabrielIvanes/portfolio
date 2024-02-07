@@ -5,6 +5,8 @@
 
 @import './assets/styles/home.css';
 @import './assets/styles/about-me.css';
+@import './assets/styles/contact.css';
+@import './assets/styles/projets.css';
 
 * {
 	box-sizing: border-box;
@@ -83,4 +85,26 @@ button:hover {
 
 div strong {
 	color: var(--accent-color);
+}
+
+@media screen and (min-width: 1100px) {
+	a .icon {
+		transition: var(--transition);
+	}
+	a:hover .icon {
+		transform: translateY(-5px);
+		transition: var(--transition);
+	}
+
+	a:hover .icon-mail {
+		color: #d44638;
+	}
+
+	a:hover .icon-github {
+		color: #000;
+	}
+
+	a:hover .icon-linkedin {
+		color: #0072b1;
+	}
 }

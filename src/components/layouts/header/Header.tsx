@@ -63,7 +63,7 @@ function Header() {
 					<div className='resume'>
 						<button>
 							<a href='/Gabriel_Ivanes_CV_Software.pdf' target='blank'>
-								CV Developpement
+								CV Développement
 							</a>
 						</button>
 						<button>

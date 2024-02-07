@@ -1,0 +1,17 @@
+.projects {
+	width: 100%;
+	padding: 125px 50px 0 50px !important;
+}
+
+.projects > h1 {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 50px;
+	color: var(--text-light);
+}
+
+@media screen and (max-width: 1100px) {
+	.projects {
+		padding: 125px 20px 0 20px !important;
+	}
+}

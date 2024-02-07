@@ -1,7 +1,13 @@
-.about-me {
+.about-me h1 {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 50px;
+	color: var(--text-light);
+}
+
+.about-me .content {
 	display: flex;
 	align-items: center;
-	width: 100%;
 }
 
 .about-me .left {
@@ -34,8 +40,11 @@
 
 @media screen and (max-width: 1100px) {
 	.about-me {
-		flex-direction: column-reverse;
 		padding: 125px 20px 0 20px !important;
+	}
+
+	.about-me .content {
+		flex-direction: column-reverse;
 	}
 
 	.about-me .left {
