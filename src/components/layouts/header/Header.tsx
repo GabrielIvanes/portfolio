@@ -49,7 +49,11 @@ function Header() {
 					)}
 
 					{locations.map((loc, index) => (
-						<Link key={index} to={loc.url}>
+						<Link
+							key={index}
+							to={loc.url}
+							onClick={() => isResponsive && setIsNavBarOpen(false)}
+						>
 							<div className={location.pathname === loc.url ? 'active' : ''}>
 								{loc.name}
 							</div>
