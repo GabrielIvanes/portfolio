@@ -74,7 +74,7 @@ function Carousel({ images_path, height }: Props) {
 				<button
 					onClick={prev}
 					className='btn-carousel btn-prev'
-					style={{ top: `${height * 1.5}%` }}
+					style={{ top: `${height * 1.4}%` }}
 				>
 					&#60;
 				</button>
@@ -83,7 +83,7 @@ function Carousel({ images_path, height }: Props) {
 				<button
 					onClick={next}
 					className='btn-carousel btn-next'
-					style={{ top: `${height * 1.5}%` }}
+					style={{ top: `${height * 1.4}%` }}
 				>
 					&#62;
 				</button>
