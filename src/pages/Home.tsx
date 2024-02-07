@@ -13,7 +13,7 @@ function Home() {
 	window.addEventListener('resize', handleResize);
 
 	return (
-		<div className='home'>
+		<div className='home wrapper'>
 			<div className='presentation'>
 				<div>
 					<p>Bonjour et bienvenue, je m'appelle</p>

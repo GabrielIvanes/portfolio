@@ -1,10 +1,3 @@
-.home {
-	position: relative;
-	min-height: calc(100vh - 50px);
-	width: 100%;
-	padding: 125px 100px 0 100px;
-}
-
 .home .presentation {
 	width: 60%;
 	filter: drop-shadow(0 0 150px #ffffff);
@@ -27,10 +20,6 @@
 .home .presentation div {
 	line-height: 1.5;
 	text-align: justify;
-}
-
-.home .presentation div strong {
-	color: var(--accent-color);
 }
 
 .home .tagline {
