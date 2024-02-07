@@ -1,5 +1,6 @@
 import { useState } from 'react';
 import astronaut from '../assets/images/astronaut.png';
+import { Link } from 'react-router-dom';
 
 function Home() {
 	const [isImageDisplay, setIsImageDisplay] = useState<boolean>(
@@ -35,7 +36,9 @@ function Home() {
 					<strong>16 à 18 semaines</strong>.
 				</div>
 			</div>
-			<button>Contactez-moi !</button>
+			<Link to='/contact'>
+				<button>Contactez-moi !</button>
+			</Link>
 
 			{isImageDisplay && <img src={astronaut} alt='astronaut' />}
 		</div>
