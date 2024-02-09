@@ -9,6 +9,7 @@
 @import './assets/styles/projects.css';
 @import './assets/styles/experiences.css';
 @import './assets/styles/competences.css';
+@import './assets/styles/error-404.css';
 
 * {
 	box-sizing: border-box;
