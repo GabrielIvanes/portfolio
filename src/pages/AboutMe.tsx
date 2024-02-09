@@ -19,9 +19,9 @@ function AboutMe() {
 						l’envie d’en <strong>apprendre tous les jours</strong>,{' '}
 						<strong>toujours plus</strong>, j’effectue parallèlement à mes
 						études des <strong>cours en ligne</strong> notamment sur
-						OpenClassrooms et edX (CS50 de Harvard) et je{' '}
-						<strong>réalise des projets</strong> afin de mettre en pratique mes
-						connaissances.
+						OpenClassrooms, edX (CS50 de Harvard), Try Hack Me, Hack The Box,
+						Cisco et je <strong>réalise des projets</strong> afin de mettre en
+						pratique mes connaissances.
 					</div>
 				</div>
 				<div className='right'>

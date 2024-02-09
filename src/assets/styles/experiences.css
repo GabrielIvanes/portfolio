@@ -1,0 +1,140 @@
+.experiences {
+	width: 100%;
+}
+
+.experiences h1 {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 50px;
+	color: var(--text-light);
+}
+
+.experiences .content:after {
+	content: '';
+	position: absolute;
+	top: 200px;
+	bottom: 0;
+	left: 50%;
+	width: 8px;
+	background: var(--accent-color);
+	border-radius: 3px;
+	z-index: 1;
+}
+
+.experiences .content article {
+	position: relative;
+	background: var(--secondary-color);
+	width: calc(50% - 40px);
+	padding: 15px;
+	border-radius: 6px 0 6px 6px;
+}
+
+.experiences .content article + article {
+	margin-top: 20px;
+}
+
+.experiences .content article:before {
+	content: '';
+	display: block;
+	position: absolute;
+	top: 0;
+	left: calc(100% + 26px);
+	background: var(--secondary-color);
+	width: 24px;
+	height: 24px;
+	border: 6px var(--accent-color) solid;
+	border-radius: 50%;
+	z-index: 2;
+}
+
+.experiences .content article:after {
+	content: '';
+	position: absolute;
+	top: 0;
+	left: 100%;
+	width: 0;
+	height: 0;
+	border-top: 20px solid transparent;
+	border-left: 16px solid var(--secondary-color);
+	border-bottom: 20px solid transparent;
+}
+
+.experiences .content article:nth-child(even) {
+	margin-left: calc(50% + 48px);
+	border-radius: 0 6px 6px 6px;
+}
+
+.experiences .content article:nth-child(even):before {
+	left: auto;
+	right: calc(100% + 26px);
+}
+
+.experiences .content article:nth-child(even):after {
+	left: auto;
+	right: 100%;
+	border-left: none;
+	border-right: 16px solid var(--secondary-color);
+}
+
+.experiences .content article h2 {
+	font-family: var(--secondary-font);
+}
+
+.experiences .content article .date {
+	font-style: italic;
+	color: var(--text-light);
+	font-size: 15px;
+	margin-bottom: 8px;
+}
+
+.experiences .content article p {
+	text-align: justify;
+}
+
+.experiences .content article ul {
+	margin-left: 30px;
+}
+
+.experiences .content article ul li {
+	text-align: justify;
+	line-height: 1.5;
+}
+
+@media screen and (max-width: 1000px) {
+	.wrapper {
+		padding: 125px 20px 0 20px !important;
+	}
+}
+
+@media screen and (max-width: 800px) {
+	.experiences .content:after {
+		content: '';
+		position: absolute;
+		top: 215px;
+		bottom: 0;
+		left: 50%;
+		width: 8px;
+		background: var(--accent-color);
+		border-radius: 3px;
+		z-index: 1;
+	}
+
+	.experiences .content article {
+		width: 100% !important;
+		z-index: 2;
+		margin-left: 0 !important;
+		border-radius: 6px !important;
+	}
+
+	.experiences .content article:after {
+		border: none;
+	}
+
+	.experiences .content article:before {
+		display: none;
+	}
+
+	.experiences .content article h2 {
+		font-size: 20px;
+	}
+}

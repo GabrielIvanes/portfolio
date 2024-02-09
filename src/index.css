@@ -6,7 +6,8 @@
 @import './assets/styles/home.css';
 @import './assets/styles/about-me.css';
 @import './assets/styles/contact.css';
-@import './assets/styles/projets.css';
+@import './assets/styles/projects.css';
+@import './assets/styles/experiences.css';
 
 * {
 	box-sizing: border-box;
@@ -106,5 +107,12 @@ div strong {
 
 	a:hover .icon-linkedin {
 		color: #0072b1;
+	}
+}
+
+@media screen and (max-width: 500px) {
+	.wrapper {
+		width: 100%;
+		padding: 125px 20px 0 20px;
 	}
 }
