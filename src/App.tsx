@@ -5,8 +5,9 @@ import Footer from './components/layouts/footer/Footer';
 import Home from './pages/Home';
 import AboutMe from './pages/AboutMe';
 import Contact from './pages/Contact';
-import Projets from './pages/Projects';
+import Projects from './pages/Projects';
 import Experiences from './pages/Experiences';
+import Competences from './pages/Competences';
 
 function App() {
 	return (
@@ -15,7 +16,8 @@ function App() {
 			<Routes>
 				<Route path='/' element={<Home />} />
 				<Route path='/a-propos' element={<AboutMe />} />
-				<Route path='/projets' element={<Projets />} />
+				<Route path='/projets' element={<Projects />} />
+				<Route path='/competences' element={<Competences />} />
 				<Route path='/experiences' element={<Experiences />} />
 				<Route path='/contact' element={<Contact />} />
 				<Route path='*' element={<Home />} />

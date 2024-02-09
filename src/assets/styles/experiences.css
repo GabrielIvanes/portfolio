@@ -137,4 +137,8 @@
 	.experiences .content article h2 {
 		font-size: 20px;
 	}
+
+	.experiences .content article p {
+		text-align: left;
+	}
 }

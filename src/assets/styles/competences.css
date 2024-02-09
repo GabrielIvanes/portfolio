@@ -1,0 +1,88 @@
+.competences {
+	width: 100%;
+	padding: 125px 0 0 0 !important;
+}
+
+.competences h1 {
+	width: 100%;
+	text-align: center;
+	margin-bottom: 50px;
+	color: var(--text-light);
+}
+
+.competences .content {
+	display: flex;
+	justify-content: space-around;
+}
+
+.competences .content h2 {
+	margin-bottom: 25px;
+	font-family: var(--secondary-font) var(--primary-font), Arial, Helvetica,
+		sans-serif;
+}
+
+.competences .content > div {
+	width: 32%;
+}
+
+.competences .content .group {
+	background-color: var(--footer-color);
+	border-radius: 8px;
+	padding: 10px;
+	width: 100%;
+}
+
+.competences .content .group + .group {
+	margin: 10px 0;
+}
+
+.competences .content .group span {
+	color: var(--text-light);
+	font-style: italic;
+	font-size: 15px;
+}
+
+.competences .content .group div {
+	text-align: justify;
+}
+
+.competences .content .technical-skills .group > div {
+	margin-top: 10px;
+	display: flex;
+	gap: 5px 10px;
+	flex-wrap: wrap;
+}
+.competences .content .technical-skills .group > div div {
+	background-color: var(--primary-color);
+	border: 1px solid var(--primary-color);
+	border-radius: 30px;
+	padding: 5px 10px;
+}
+
+.competences .content .group button {
+	margin-top: 10px;
+}
+
+.competences .content .group button a {
+	color: inherit;
+	text-decoration: none;
+}
+
+@media screen and (max-width: 1100px) {
+	.competences .content {
+		flex-direction: column;
+		align-items: center;
+	}
+
+	.competences .content > div {
+		width: 80%;
+	}
+
+	.competences .content h2 {
+		text-align: center;
+		margin: 25px;
+	}
+	.competences .content .certifications h2 {
+		margin-top: 0;
+	}
+}

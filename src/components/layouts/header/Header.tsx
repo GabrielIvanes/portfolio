@@ -23,6 +23,7 @@ function Header() {
 		{ url: '/', name: 'Accueil' },
 		{ url: '/a-propos', name: 'A propos' },
 		{ url: '/experiences', name: 'Expériences' },
+		{ url: '/competences', name: 'Compétences' },
 		{ url: '/projets', name: 'Projets' },
 		{ url: '/contact', name: 'Contact' },
 	];
