@@ -2,7 +2,7 @@
 
 My own portfolio build with React and TypeScript and hosted by [Vercel](https://vercel.com/).
 
-![alt text](https://gabriel.ivanes.fr/preview.fr)
+![website image](https://gabriel.ivanes.fr/preview.png)
 
 # 🎨 Color Reference
 
