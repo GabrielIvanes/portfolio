@@ -50,7 +50,9 @@ function Header() {
 	window.addEventListener('scroll', handleScroll);
 
 	return (
-		<header className={isScrolled ? 'scrolled' : ''}>
+		<header
+			className={isScrolled || (isResponsive && isNavBarOpen) ? 'scrolled' : ''}
+		>
 			{isNavBarOpen ? (
 				<>
 					{isResponsive && (
