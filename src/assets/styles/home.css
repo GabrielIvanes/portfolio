@@ -43,11 +43,12 @@
 	bottom: 50px;
 	right: 150px;
 	transform: rotate(30deg);
-	/* filter: drop-shadow(0 0 2px #ffffff) drop-shadow(0 0 10px #ffffff);
+	filter: drop-shadow(0 0 2px #ffffff) drop-shadow(0 0 10px #ffffff);
 	-webkit-filter: drop-shadow(0 0 2px #ffffff) drop-shadow(0 0 10px #ffffff);
 	-moz-filter: drop-shadow(0 0 2px #ffffff) drop-shadow(0 0 10px #ffffff);
 	-o-filter: drop-shadow(0 0 2px #ffffff) drop-shadow(0 0 10px #ffffff);
-	-ms-filter: drop-shadow(0 0 2px #ffffff) drop-shadow(0 0 10px #ffffff); */
+	-ms-filter: drop-shadow(0 0 2px #ffffff) drop-shadow(0 0 10px #ffffff);
+	-webkit-appearance: none;
 }
 
 @media screen and (max-width: 1100px) {
