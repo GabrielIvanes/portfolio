@@ -18,6 +18,7 @@ function Header() {
 	const [isResponsive, setIsResponsive] = useState<boolean>(
 		window.innerWidth < 1100
 	);
+	const [isScrolled, setIsScrolled] = useState<boolean>(false);
 
 	const locations: Location[] = [
 		{ url: '/', name: 'Accueil' },
@@ -33,14 +34,23 @@ function Header() {
 		setIsNavBarOpen(window.innerWidth > 1100);
 	}
 
+	function handleScroll() {
+		if (window.scrollY > 0) {
+			setIsScrolled(true);
+		} else {
+			setIsScrolled(false);
+		}
+	}
+
 	function handleBarsAndXMarkClick() {
 		setIsNavBarOpen(!isNavBarOpen);
 	}
 
 	window.addEventListener('resize', handleResize);
+	window.addEventListener('scroll', handleScroll);
 
 	return (
-		<header>
+		<header className={isScrolled ? 'scrolled' : ''}>
 			{isNavBarOpen ? (
 				<>
 					{isResponsive && (

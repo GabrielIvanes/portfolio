@@ -8,8 +8,11 @@ header {
 	height: 125px;
 	width: 100%;
 	position: fixed;
-	backdrop-filter: blur(100px);
 	z-index: 3;
+}
+
+header.scrolled {
+	backdrop-filter: blur(100px);
 }
 
 header .resume {

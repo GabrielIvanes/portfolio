@@ -1,12 +1,14 @@
 .home .presentation {
 	width: 60%;
-
 	filter: drop-shadow(0 0 150px #ffffff);
 	-webkit-filter: drop-shadow(0 0 150px #ffffff);
 	-moz-filter: drop-shadow(0 0 150px #ffffff);
 	-o-filter: drop-shadow(0 0 150px #ffffff);
 	-ms-filter: drop-shadow(0 0 150px #ffffff);
 	-webkit-appearance: none;
+	-webkit-transform: translateZ(0);
+	-webkit-perspective: 1000;
+	-webkit-backface-visibility: hidden;
 }
 
 .home .presentation p {
