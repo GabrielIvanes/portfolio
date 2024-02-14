@@ -12,7 +12,7 @@ function Competences() {
 						<div>910 / 990</div>
 					</div>
 					<div className='group'>
-						<h3>Jr Penetration Tester</h3>
+						<h3>Jr Penetration Tester - Try Hack Me</h3>
 						<span>En cours d'apprentissage</span>
 						<div>
 							Mots clés: Web Hacking, Burp, network security, Vulnerability
@@ -20,7 +20,7 @@ function Competences() {
 						</div>
 					</div>
 					<div className='group'>
-						<h3>Introduction to Cybersecurity</h3>
+						<h3>Introduction to Cybersecurity - Cisco</h3>
 						<span>Date de délivrance: </span>
 						<span>Février 2024</span>
 						<div>
