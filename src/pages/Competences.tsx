@@ -13,11 +13,17 @@ function Competences() {
 					</div>
 					<div className='group'>
 						<h3>Jr Penetration Tester - Try Hack Me</h3>
-						<span>En cours d'apprentissage</span>
+						<span>Date de délivrance: </span>
+						<span>Mars 2024</span>
 						<div>
 							Mots clés: Web Hacking, Burp, network security, Vulnerability
 							research, metasploit, privilege escalation
 						</div>
+						<button>
+							<a href='/THM_JR_PENTESTER' target='_blank'>
+								Identifiant
+							</a>
+						</button>
 					</div>
 					<div className='group'>
 						<h3>Introduction to Cybersecurity - Cisco</h3>

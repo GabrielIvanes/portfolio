@@ -7,15 +7,7 @@ function Contact() {
 		<div className='wrapper contact'>
 			<h1>Contact</h1>
 			<div className='content'>
-				<p>
-					Je suis activement à la recherche d'un stage cybersécurité ou
-					développement logiciel à partir du 08 avril 2024 pour une durée de 16
-					à 18 semaines.
-					<br />
-					<br />
-					<br />
-					Vous pouvez me contacter ci-dessous via un de mes réseaux !
-				</p>
+				<p>Vous pouvez me contacter ci-dessous via un de mes réseaux !</p>
 				<div className='social-media'>
 					<div>
 						<a href='mailto:ivanes.gabriel@gmail.com' target='_blank'>
