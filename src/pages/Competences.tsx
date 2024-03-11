@@ -20,7 +20,7 @@ function Competences() {
 							research, metasploit, privilege escalation
 						</div>
 						<button>
-							<a href='/THM_JR_PENTESTER' target='_blank'>
+							<a href='/THM_JR_PENTESTER.pdf' target='_blank'>
 								Identifiant
 							</a>
 						</button>
