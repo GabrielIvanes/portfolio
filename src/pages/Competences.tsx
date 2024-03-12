@@ -123,7 +123,6 @@ function Competences() {
 							<div>MySQL</div>
 							<div>MongoDB</div>
 							<div>PostreSQL</div>
-							<div>Spring boot</div>
 						</div>
 					</div>
 					<div className='group'>
