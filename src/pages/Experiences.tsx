@@ -14,6 +14,17 @@ function Experiences() {
 					</p>
 				</article>
 				<article>
+					<h2>Stage Ingénieur DevOps</h2>
+					<div className='date'>
+						Thales - Gennevilliers (92230) | 2024 (4 mois)
+					</div>
+					<div>
+						Mise en place d'une chaîne automatique, avec Jenkins, de déploiement
+						et de configuration de deux machines virtuelles Debian et Windows
+						Server sur un VMware ESXi.
+					</div>
+				</article>
+				<article>
 					<h2>Stage Product Owner</h2>
 					<div className='date'>
 						OMNEO Solutions - Lille (59000) | 2023 (3 mois)

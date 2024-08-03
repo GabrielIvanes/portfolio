@@ -40,6 +40,10 @@ function Projects() {
 			],
 			links: [
 				{
+					type: 'web-page',
+					link: 'https://flixhunt-v2.vercel.app/',
+				},
+				{
 					type: 'github',
 					link: 'https://github.com/GabrielIvanes/flixhunt-v2',
 				},

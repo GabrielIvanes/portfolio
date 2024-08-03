@@ -62,6 +62,7 @@ function Competences() {
 					<div className='group'>
 						<h3>Langages de scripting</h3>
 						<div>
+							<div>PowerShell</div>
 							<div>Python</div>
 							<div>Bash</div>
 						</div>
@@ -107,13 +108,16 @@ function Competences() {
 						<div>
 							<div>Docker</div>
 							<div>Ansible</div>
-							<div>Base de CI/CD</div>
+							<div>CI/CD</div>
+							<div>Jenkins</div>
+							<div>Gitlab CI/CD</div>
 						</div>
 					</div>
 					<div className='group'>
 						<h3>Autres outils</h3>
 						<div>
 							<div>Git & Github</div>
+							<div>Outils VMware et PowerCLI</div>
 							<div>Splunk</div>
 						</div>
 					</div>

@@ -26,7 +26,7 @@ function Home() {
 					logiciel, j'aborde chaque défi avec enthousiasme, persévérance et
 					rigueur.
 				</div>
-				<div className='short-presentation'>
+				{/* <div className='short-presentation'>
 					Je suis actuellement à la recherche d'une opportunité de{' '}
 					<strong>stage</strong> en <strong>France</strong> dans les domaines de
 					la <strong>cybersécurité</strong>, des{' '}
@@ -34,7 +34,7 @@ function Home() {
 					<strong>développement logiciel</strong> à partir du{' '}
 					<strong>08 avril 2024</strong> pour une durée de{' '}
 					<strong>16 à 18 semaines</strong>.
-				</div>
+				</div> */}
 			</div>
 			<Link to='/contact'>
 				<button>Contactez-moi !</button>
