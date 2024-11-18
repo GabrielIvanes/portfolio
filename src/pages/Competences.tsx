@@ -98,6 +98,7 @@ function Competences() {
 						<h3>Frameworks</h3>
 						<div>
 							<div>React</div>
+							<div>NextJs</div>
 							<div>Jest</div>
 							<div>Express.js</div>
 							<div>Spring boot</div>

@@ -5,7 +5,7 @@ function AboutMe() {
 			<div className='content'>
 				<div className='left'>
 					<div>
-						Bonjour ! Je suis Gabriel Ivanes, élève ingénieur en deuxième année
+						Bonjour ! Je suis Gabriel Ivanes, élève ingénieur en dernière année
 						à l'école <strong>IMT Nord Europe</strong>. J'ai commencé à
 						m'intéresser au <strong>développement d'applications</strong> et à
 						la <strong>cybersécurité</strong> depuis quelques années pour

@@ -7,10 +7,9 @@ function Experiences() {
 					<h2>IMT Nord Europe</h2>
 					<div className='date'>2020 - 2025</div>
 					<p>
-						Actuellement en deuxième année du cycle ingénieur (bac+4).
-						Fondamentaux réseaux et sécurité, architectures réseaux,
-						authentification et forensics, conception et développement
-						d’applications web.
+						Actuellement en dernière année du cycle ingénieur (bac+5).
+						Programming for Distributed System, Compilers & Interpreters,
+						Software Architecture and Mobile Platform
 					</p>
 				</article>
 				<article>
